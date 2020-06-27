@@ -1,4 +1,4 @@
-# CHAPTER1
+# CHAPTER 01 Riot.jsについて知ろう
 
 * P17（脱字）
 

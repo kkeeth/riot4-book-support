@@ -15,14 +15,14 @@
 * [CHAPTER 04 Giphy APIを利用したアプリケーション](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER04.md)
 * [CHAPTER 05 Riot.jsでのスタイリング](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER05.md)
 * [CHAPTER 06 CMSの開発](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER06.md)
-* [APPENDIX 今後の開発に向けて](https://github.com/kkeeth/riot4-book-support/blob/master/advanes/APPENDIX.md)
+* [APPENDIX 今後の開発に向けて](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/APPENDIX.md)
 
 
 ## ○ 発展内容
 
 こちらは、`Riot.js` 本体の変化や書籍で登場するライブラリ、書籍出版以降にリリースされたサードパーティ製ライブラリなどのまとめになります。以下のリンクからアクセスしてご確認ください🙏
 
-[ADVANCES.md](https://github.com/kkeeth/riot4-book-support/blob/master/ADVANCES.md)
+[ADVANCES.md](https://github.com/kkeeth/riot4-book-support/blob/master/advances/ADVANCES.md)
 
 
 ## その他

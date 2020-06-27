@@ -9,13 +9,13 @@
 
 各章ごとにファイルを分けておりますので、以下のリンクからアクセスしてください。
 
-* [CHAPTER 01 Riot.jsについて知ろう](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER01.md)
-* [CHAPTER 02 CHAPTER 02 Riot.jsの基礎](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER02.md)
-* [CHAPTER 03 はじめてのRiot.jsでのアプリケーション開発](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER03.md)
-* [CHAPTER 04 Giphy APIを利用したアプリケーション](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER04.md)
-* [CHAPTER 05 Riot.jsでのスタイリング](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER05.md)
-* [CHAPTER 06 CMSの開発](https://github.com/kkeeth/riot4-book-support/blob/master/CHAPTER06.md)
-* [APPENDIX 今後の開発に向けて](https://github.com/kkeeth/riot4-book-support/blob/master/APPENDIX.md)
+* [CHAPTER 01 Riot.jsについて知ろう](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER01.md)
+* [CHAPTER 02 CHAPTER 02 Riot.jsの基礎](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER02.md)
+* [CHAPTER 03 はじめてのRiot.jsでのアプリケーション開発](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER03.md)
+* [CHAPTER 04 Giphy APIを利用したアプリケーション](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER04.md)
+* [CHAPTER 05 Riot.jsでのスタイリング](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER05.md)
+* [CHAPTER 06 CMSの開発](https://github.com/kkeeth/riot4-book-support/blob/master/corrections/CHAPTER06.md)
+* [APPENDIX 今後の開発に向けて](https://github.com/kkeeth/riot4-book-support/blob/master/advanes/APPENDIX.md)
 
 
 ## ○ 発展内容

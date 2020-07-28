@@ -17,10 +17,10 @@
 * P203（誤植）
 
 ```diff
-    anime({
+  + anime({
 - +   targets: 'li',
 + +   targets: 'li:last-child',
-      translateX: [200, 0],
-      delay: anime.stagger(100)
-    })
+  +   translateX: [200, 0],
+  +   delay: anime.stagger(100)
+  + })
 ```

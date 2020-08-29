@@ -6,3 +6,15 @@
 誤: /mypageというUR に来たら
 正: /mypageというURLに来たら
 ```
+
+- P286-287（誤植）
+
+```diff
+- <app-router>
++ <app-route>
+
+...
+
+- </app-router>
++ </app-route>
+```

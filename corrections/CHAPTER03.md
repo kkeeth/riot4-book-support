@@ -5,9 +5,9 @@ Plunker の preview の URL はソースコードを変更して保存したり�
 
 以下の URL にアクセスしてみてください。
 
-```diff
-- https://run.plnkr.co/preview/ck8em6dla001a2a6lbxtc9nbd/
-+ https://plnkr.co/plunk/Uoghj8aOznPhxdoQ6GHJ
+```
+誤: https://run.plnkr.co/preview/ck8em6dla001a2a6lbxtc9nbd/
+正: https://plnkr.co/plunk/Uoghj8aOznPhxdoQ6GHJ
 ```
 
 * P110, 112
@@ -17,8 +17,8 @@ P112 の `⑤では、〜`は、P110 の `⑤では、〜` が正しく、書籍
 * P112（誤植）
 
 ```diff
-- ⑤では、updateHasDoneTodo という名前で、
-+ ⑤では、checkDoneTodo という名前で、
+誤: ⑤では、updateHasDoneTodo という名前で、
+正: ⑤では、checkDoneTodo という名前で、
 ```
 
 

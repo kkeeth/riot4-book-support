@@ -11,6 +11,32 @@ Plunker の preview の URL はソースコードを変更して保存したり�
 正: https://plnkr.co/plunk/Uoghj8aOznPhxdoQ6GHJ
 ```
 
+* P95（誤植）
+
+ソースコード上のインデントが揃っていない。
+
+```diff
+  +   margin: 5% auto;
+- + padding: 20px;
++ +   padding: 20px;
+- + box-shadow:
+- +   0 2px 2px 0 rgba(0,0,0,.14),
+- +   0 3px 1px -2px rgba(0,0,0,.2),
+- +   0 1px 5px 0 rgba(0,0,0,.12);
++ +   box-shadow:
++ +     0 2px 2px 0 rgba(0,0,0,.14),
++ +     0 3px 1px -2px rgba(0,0,0,.2),
++ +     0 1px 5px 0 rgba(0,0,0,.12);
+  + }
+```
+
+* P98（誤植）
+
+```diff
+- + <h4>todo list</ht>
++ + <h4>todo list</h4>
+```
+
 * P110, 112
 
 P112 の `⑤では、〜`は、P110 の `⑤では、〜` が正しく、書籍のものは削除し忘れ。

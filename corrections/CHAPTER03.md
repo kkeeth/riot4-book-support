@@ -138,6 +138,39 @@ P111, P119 と同様に `...newTask` の誤植となります。
   + ]
 ```
 
+#### ▼ P123（誤植）
+
+P120 にて追加したコードと、P123 で削除するコードが一致しておりませんでした。
+
+```diff
+- - this.update({
+- -   todoList: [
+- -     ...this.state.todoList,
+- -     {
+- -       id: this.state.nextId + 1,
+- -       title: e.target.todo.value,
+- -       done: false
+- -     }
+- -   ],
+- -   nextId: this.state.nextId + 1,
+- -   isInput: false,
+- -   hasDoneTodo: this.props.checkDoneTodo()
+- - })
++ - const updatedTodoList = [
++ -   ...this.state.todoList,
++ -   {
++ -     id: this.state.nextId + 1,
++ -     ...newTask
++ -   }
++ - ]
++ - this.update({
++ -   todoList: updatedTodoList,
++ -   nextId: this.state.nextId + 1,
++ -   isInput: false
++ -   hasDoneTodo: this.props.checkDoneTodo(updatedTodoList),
++ - })
+```
+
 #### ▼ P125（誤植）
 
 ソースコード中の updateHasDoneTodo というメソッドは存在せず、checkDoneTodo が正しいメソッド名となります。
@@ -149,4 +182,14 @@ onBeforeMount(props, state) {
 + this.checkDoneTodo()
   this.obs = observable(this)
 },
+```
+
+#### ▼ P127（誤植）
+
+冒頭のソースコードの以下の `<button>` タグの変更は特になく、かつ記述が間違っておりました。
+
+```diff
+- - <button disabled={ !state.isInput }>
+- + <button disabled={ !props.isInput }>
++ <button disabled={ !isInput }>
 ```

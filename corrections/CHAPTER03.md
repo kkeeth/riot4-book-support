@@ -50,17 +50,77 @@ P110 の `③では、〜` にて完了タスクのボタンの非活性化に�
 
 同様に P112 の `一括削除のボタンは3で対象のtodoが存在しなければ非活性に〜` の記述も誤植となります。ただし、`⑦でスタイルを調整しています。` の記述については正しい記述となります。
 
+- P111（誤植）
+
+文中でいきなり `...newTask` というパラメータが出てきておりますが、こちらのパラメータは後ほど出てくるもので、P111 の時点では以下の記述が正しいものとなります。
+
+```diff
+  + const updatedTodoList = [
+  +   ...this.state.todoList,
+  +
+  +   {
+  +     id: this.state.nextId + 1,
+- +     ...newTask
++ +     title: e.target.todo.value,
++ +     done: false
+  +   }
+  + ]
+    this.update({
+  +   hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+  -   todoList: [
+  -     ...this.state.todoList,
+  -     {
+  -       id: this.state.nextId + 1,
+- -       ...newTask
++ -       title: e.target.todo.value,
++ -       done: false
+  -     }
+  -   ],
+```
+
 - P112（誤植）
 
 一点目：
 `⑤では、〜` は、P110 の `⑤では、〜` が正しく、書籍のものは削除し忘れとなります。
 
 二点目：
-以下の誤植です。
+本文中の `updateHasDoneTodo` というメソッドは存在せず、`checkDoneTodo` が正しいメソッド名となります。
 
 ```diff
 誤: ⑤では、updateHasDoneTodo という名前で、
 正: ⑤では、checkDoneTodo という名前で、
+```
+
+- P119（誤植）
+
+P111 と同様に `...newTask` の誤植となります。
+
+```diff
+  - const updatedTodoList = [
+  -   ...this.state.todoList,
+  -   {
+  -     id: this.state.nextId + 1,
+- -     ...newTask
++ -     title: e.target.todo.value,
++ -     done: false
+  -   }
+  - ]
+```
+
+- P120（誤植）
+
+P111, P119 と同様に `...newTask` の誤植となります。
+
+```diff
+  + const updatedTodoList = [
+  +   ...this.state.todoList,
+  +   {
+  +     id: this.state.nextId + 1,
+- +     ...newTask
++ +     title: e.target.todo.value,
++ +     done: false
+  +   }
+  + ]
 ```
 
 - P125（誤植）

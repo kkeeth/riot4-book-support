@@ -193,3 +193,34 @@ onBeforeMount(props, state) {
 - + <button disabled={ !props.isInput }>
 + <button disabled={ !isInput }>
 ```
+
+#### ▼ P130（誤植）
+
+todo-list.riot の `deleteTodo` メソッドの中の変数名が間違っておりました。
+
+```diff
+- + const filteredTodoList
++ + const updatedTodoList
+  +   = this.props.todoList.filter(item => item.id !== todo.id)
+  + this.update({
+  +   hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+  +   todoList: updatedTodoList
+  + })
+```
+
+#### ▼ P131（誤植）
+
+P130 と同様に、todo-list.riot の `deleteTodo` メソッドの中の変数名が間違っておりました。
+
+```diff
+-   const filteredTodoList
++   const updatedTodoList
+      = this.props.todoList.filter(item => item.id !== todo.id)
+  - this.update({
+  -   hasDoneTodo: this.checkDoneTodo(updatedTodoList),
+  -   todoList: updatedTodoList
+  - })
+  + // ⑨
+- + this.props.observable.trigger('delete todo', filteredTodoList)}
++ + this.props.observable.trigger('delete todo', updatedTodoList)}
+```

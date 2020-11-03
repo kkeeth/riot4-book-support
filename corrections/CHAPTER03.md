@@ -37,6 +37,20 @@ Plunker の preview の URL はソースコードを変更して保存したり�
 + + <h4>todo list</h4>
 ```
 
+#### ▼ P103（誤植）
+
+ソースコード上のイベントハンドラの指定が間違っておりました。
+
+```diff
+  + <input
+  +   name="todo"
+  +   value=""
+  +   placeholder="please input task"
+- +   oninput={ input }
++ +   onkeyup={ input }
+  + />
+```
+
 #### ▼ P105（脱字）
 
 ```

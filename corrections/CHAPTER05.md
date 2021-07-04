@@ -27,7 +27,7 @@
 
 #### ▼ P215（誤植）
 
-1つ目の `app.riot` の記述について．
+1つ目の `app.riot` の記述について、スタイルの微調整のコードが抜けていました。
 
 ```diff
   + <style>
@@ -41,12 +41,12 @@
   + </style>
 ```
 
-`main.js` について．
+`main.js` について、コメントアウトしている行の記述が漏れていました。
 
 ```diff
-  import '@riotjs/hot-reload'
-  import {component} from 'riot'
-+ // import 'ress'
+    import '@riotjs/hot-reload'
+    import {component} from 'riot'
++   // import 'ress'
   + import 'semantic-ui-riot'
-  import App from './app.riot'
+    import App from './app.riot'
 ```

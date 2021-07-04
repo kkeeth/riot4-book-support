@@ -24,3 +24,29 @@
   +   delay: anime.stagger(100)
   + })
 ```
+
+#### ▼ P215（誤植）
+
+1つ目の `app.riot` の記述について．
+
+```diff
+  + <style>
+  +   :host {
+  +     padding: 2rem;
+  +   }
++ +   li {
++ +     list-style: none;
++ +     margin: 10px auto;
++ +   }
+  + </style>
+```
+
+`main.js` について．
+
+```diff
+  import '@riotjs/hot-reload'
+  import {component} from 'riot'
++ // import 'ress'
+  + import 'semantic-ui-riot'
+  import App from './app.riot'
+```

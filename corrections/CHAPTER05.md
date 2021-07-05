@@ -27,7 +27,7 @@
 
 #### ▼ P215（誤植）
 
-1つ目の `app.riot` の記述について、スタイルの微調整のコードが抜けていました。
+1 つ目の `app.riot` の記述について、スタイルの微調整のコードが抜けていました。
 
 ```diff
   + <style>
@@ -49,4 +49,29 @@
 +   // import 'ress'
   + import 'semantic-ui-riot'
     import App from './app.riot'
+```
+
+#### ▼ P231, 232（誤植）
+
+以下コードの記述の 1 行の挿入位置が間違っておりました。
+
+```diff
+  + handleInput(e) {
+  +   if (e.target.value.length > 0)
+  +     this.errors.address = ""
+  +   else
+  +     this.errors.address = errorMessages.address
+  +
+- +   this.isTermCheck = !this.isTermCheck
+  +   this.update()
+  + },
+  + handleChangeCheckbox(e) {
+  +   if (e.target.checked)
+  +     this.errors.agree = ""
+  +   else
+  +     this.errors.agree = errorMessages.agree
+  +
++ +   this.isTermCheck = !this.isTermCheck
+  +   this.update()
+  + }
 ```
